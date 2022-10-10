@@ -10,6 +10,7 @@ using ShoppingWebsite.Models;
 
 namespace ShoppingWebsite.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class BrandController : Controller
     {
         private ShoppingEntities db = new ShoppingEntities();

@@ -48,5 +48,11 @@ namespace ShoppingWebsite.Controllers
             return RedirectToAction("Login");
 
         }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
+        }
     }
 }
